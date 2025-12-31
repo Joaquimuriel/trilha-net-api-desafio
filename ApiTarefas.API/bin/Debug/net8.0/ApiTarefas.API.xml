@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiTarefas.API</name>
+    </assembly>
+    <members>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.ObterTodas">
+            <summary>
+            Obter todas as tarefas
+            </summary>
+            <returns>Lista de tarefas</returns>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.ObterPorId(System.Int32)">
+            <summary>
+            Obter tarefa por ID
+            </summary>
+            <param name="id">ID da tarefa</param>
+            <returns>Tarefa encontrada</returns>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.Filtrar(ApiTarefas.API.Models.DTOs.FiltrarTarefaDTO)">
+            <summary>
+            Filtrar tarefas com múltiplos critérios
+            </summary>
+            <param name="filtro">Objeto de filtro</param>
+            <returns>Tarefas filtradas</returns>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.ObterPaginadas(ApiTarefas.API.Models.DTOs.FiltrarTarefaDTO)">
+            <summary>
+            Obter tarefas paginadas
+            </summary>
+            <param name="filtro">Objeto de filtro com paginação</param>
+            <returns>Tarefas paginadas com metadados</returns>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.Criar(ApiTarefas.API.Models.DTOs.CriarTarefaDTO)">
+            <summary>
+            Criar nova tarefa
+            </summary>
+            <param name="dto">Dados da tarefa</param>
+            <returns>Tarefa criada</returns>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.Atualizar(System.Int32,ApiTarefas.API.Models.DTOs.AtualizarTarefaDTO)">
+            <summary>
+            Atualizar tarefa existente
+            </summary>
+            <param name="id">ID da tarefa</param>
+            <param name="dto">Novos dados da tarefa</param>
+            <returns>Tarefa atualizada</returns>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.Excluir(System.Int32)">
+            <summary>
+            Excluir tarefa (soft delete)
+            </summary>
+            <param name="id">ID da tarefa</param>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.Concluir(System.Int32)">
+            <summary>
+            Marcar tarefa como concluída
+            </summary>
+            <param name="id">ID da tarefa</param>
+        </member>
+        <member name="M:ApiTarefas.API.Controllers.TarefasController.Estatisticas">
+            <summary>
+            Obter estatísticas das tarefas
+            </summary>
+            <returns>Estatísticas gerais</returns>
+        </member>
+    </members>
+</doc>
